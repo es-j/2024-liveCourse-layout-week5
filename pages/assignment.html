@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <div class="d-flex">
+        <%- include('./layout/assign-menu'); -%>
+        <div class="container">
+            <div class="assignment-bar px-5 py-8 d-flex align-items-center ">
+                <h2 class="me-9 mb-0 fs-4 fw-bold">Assignment</h2>
+                <div class="dropdown">
+                    <button class="btn btn-body p-0 border-0 d-flex fw-bold" type="button" id="courseSelect" data-bs-toggle="dropdown" aria-expanded="false">
+                        All Courses<span class="material-icons ms-2 text-success">expand_more</span>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="courseSelect">
+                        <li><a class="dropdown-item" href="#">HTML & CSS</a></li>
+                        <li><a class="dropdown-item" href="#">jQuery</a></li>
+                        <li><a class="dropdown-item" href="#">Java Script</a></li>
+                    </ul>
+                </div>
+                <a class="ms-auto link-dark" href="#"><span class="material-icons">search</span></a>
+                <a class="ms-6 link-dark" href="#"><span class="material-icons">notifications_active</span></a>
+            </div>
+            <div class="content px-5 pt-3 pb-8">
+                <div class="mb-1 d-flex align-items-center">
+                    <div class="dropdown">
+                        <button class="btn btn-body p-0 border-0 d-flex fw-bold" type="button" id="assignmentStatus" data-bs-toggle="dropdown" aria-expanded="false">
+                            All (4)<span class="material-icons ms-2 text-success">expand_more</span>
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="assignmentStatus">
+                            <li><a class="dropdown-item" href="#">Replied</a></li>
+                            <li><a class="dropdown-item" href="#">Read</a></li>
+                            <li><a class="dropdown-item" href="#">To Be Checked</a></li>
+                        </ul>
+                    </div>
+                    <p class="ms-auto mb-0 text-xs text-secondary">2 comments</p>
+                </div>
+                <div class="row">
+                    <div class="col-4 border-0">
+                        <div class="card rounded-1">
+                            <ul class="question-list list-group list-group-flush">
+                                <li class="list-group-item p-0 bg-light">
+                                    <a href="#" class="p-3 d-flex flex-column">
+                                        <div class="d-flex justify-content-between">
+                                            <p class="mb-0 text-xs text-dark text-truncate">Chapter Assignment 2</p>
+                                            <p class="mb-0 text-xs text-dark">4 hrs ago</p>
+                                        </div>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <p class="mb-0 text-dark fw-bold text-truncate question-title">Please check this file for me, thanks!</p>
+                                            <p class="mb-0 text-xs text-secondary">Emily Wang</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="list-group-item p-0">
+                                    <a href="#" class="p-3 d-flex flex-column">
+                                        <div class="d-flex justify-content-between">
+                                            <p class="mb-0 text-xs text-dark text-truncate">Chapter Assignment 1</p>
+                                            <p class="mb-0 text-xs text-dark">12 hrs ago</p>
+                                        </div>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <p class="mb-0 text-dark fw-bold text-truncate question-title">My Homework</p>
+                                            <p class="mb-0 text-xs text-secondary">David Xu</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="list-group-item p-0">
+                                    <a href="#" class="p-3 d-flex flex-column">
+                                        <div class="d-flex justify-content-between">
+                                            <p class="mb-0 text-xs text-dark text-truncate">Final Assignment</p>
+                                            <p class="mb-0 text-xs text-dark">18 hrs ago</p>
+                                        </div>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <p class="mb-0 text-dark fw-bold text-truncate question-title">Have a problem with this…</p>
+                                            <p class="mb-0 text-xs text-secondary">Tony Wei</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="list-group-item p-0">
+                                    <a href="#" class="p-3 d-flex flex-column">
+                                        <div class="d-flex justify-content-between">
+                                            <p class="mb-0 text-xs text-dark text-truncate">Final Assignment</p>
+                                            <p class="mb-0 text-xs text-dark">19 hrs ago</p>
+                                        </div>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <p class="mb-0 text-dark fw-bold text-truncate question-title">Did I do it right?</p>
+                                            <p class="mb-0 text-xs text-secondary">Christina Lin</p>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-8 border-0">
+                        <div class="card rounded-1">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item px-4 py-3 bg-light d-flex justify-content-between align-items-center">
+                                    <div>
+                                        <p class="mb-0 text-xs">Chapter Assignment 2 / HTML&CSS</p>
+                                        <h3 class="mb-0 fs-6 fw-bold">Please check this file for me, thanks!</h3>
+                                    </div>
+                                    <a href="#" class="link-dark"><span class="material-icons">more_vert</span></a>
+                                </li>
+                                <li class="list-group-item ps-4 pe-8 py-4">
+                                    <div>
+                                        <div class="user d-flex align-items-center mb-4">
+                                            <img class="me-2 rounded-circle" src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week5/emilywang.jpeg" alt="emilywang">
+                                            <div>
+                                                <p class="mb-0 fw-bold">Emily Wang</p>
+                                                <p class="mb-0 text-xs text-secondary">10:38 AM (4 hours ago)</p>
+                                            </div>
+                                        </div>
+                                        <div class="ms-9 border-bottom">
+                                            <p class="text-sm">Hi Teacher, the attached file is my homework of chapter 2. And here comes a question: Why in the following code the height of the <code class="text-success bg-light px-1 rounded-1">div</code> is bigger than the height of the <code class="text-success bg-light px-1 rounded-1">img</code> ? There is a gap below the image, but it doesn’t seems to be a padding/margin. <br>What is the gap or extra space below image?</p>
+                                            <button type="button" class="btn btn-light pe-4 py-2 mb-4 d-flex border-primary rounded-1">
+                                                <span class="material-icons pe-2">attach_file</span>
+                                                <p class="mb-0 fw-bold">HW-2-David.zip</p>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="mt-4">
+                                        <div class="user mb-4 d-flex align-items-center">
+                                            <img class="me-2 rounded-circle" src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week5/andychen.jpeg" alt="andychen">
+                                            <div>
+                                                <p class="mb-0 fw-bold">Andy Chen (You)</p>
+                                                <p class="mb-0 text-xs text-secondary">13:24 AM (1 hours ago)</p>
+                                            </div>
+                                            <a href="#" class="ms-auto link-dark"><span class="material-icons">star_border</span></a>
+                                            <a href="#" class="ms-6 link-dark"><span class="material-icons">edit</span></a>
+                                        </div>
+                                        <div class="ms-9 text-sm">
+                                            <p>
+                                                Hi David, by default, an image is rendered inline, like a letter so it sits on the same line that a, b, c and d sit on. There is space below that line for the descenders you find on letters like g, j, p and q. 
+                                            </p>
+                                            <p>You can:</p>
+                                            <ul>
+                                                <li>adjust the <code class="px-1 text-success bg-light rounded-1">vertical-align</code> of the image to position it elsewhere (e.g. the <code class="px-1 text-success bg-light rounded-1">middle</code>)</li>
+                                                <li>change the <code class="px-1 text-success bg-light rounded-1">display</code> so it isn’t inline.</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="mt-4 d-flex justify-content-between align-items-center position-relative">
+                            <div>
+                                <a href="#" class="me-6 link-dark"><span class="material-icons">navigate_before</span></a>
+                                <a href="#" class="link-dark"><span class="material-icons">navigate_next</span></a>
+                            </div>
+                            <div>
+                                <button type="button" class="btn btn-outline-success px-8 py-2 me-4 fw-bold">Mark as read</button>
+                                <button type="button" class="btn btn-success px-8 py-2 fw-bold" data-bs-toggle="collapse" data-bs-target="#reply" aria-expanded="false" aria-controls="reply">Reply</button>
+                                <div class="collapse" id="reply">
+                                    <div class="card position-absolute bottom-0 start-0 end-0">
+                                        <div class="reply-format card-header ps-6 py-2 d-flex flex-wrap align-items-center">
+                                            <div class="dropdown me-6 py-2">
+                                                <button class="btn btn-body p-0 border-0 d-flex fw-bold rounded-0" type="button" id="textFormat" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    Body Text<span class="material-icons">arrow_drop_down</span>
+                                                </button>
+                                                <ul class="dropdown-menu rounded-0" aria-labelledby="textFormat">
+                                                    <li><a class="dropdown-item" href="#">H1</a></li>
+                                                    <li><a class="dropdown-item" href="#">H2</a></li>
+                                                    <li><a class="dropdown-item" href="#">H3</a></li>
+                                                </ul>
+                                            </div>
+                                            <a href="#" class="me-6 py-2"><span class="material-icons">format_bold</span></a>
+                                            <a href="#" class="me-6 py-2"><span class="material-icons">format_italic</span></a>
+                                            <a href="#" class="me-6 py-2"><span class="material-icons">format_list_bulleted</span></a>
+                                            <a href="#" class="me-6 py-2"><span class="material-icons">format_list_numbered</span></a>
+                                            <a href="#" class="me-6 py-2"><span class="material-icons">insert_photo</span></a>
+                                            <a href="#" class="me-6 py-2"><span class="material-icons">attachment</span></a>
+                                            <a href="#" class="py-2"><span class="material-icons">code</span></a>
+                                        </div>
+                                        <div class="card-body px-6 position-relative">
+                                            <textarea class="border-0 answer-text" placeholder="Reply an answer…"></textarea>
+                                            <div class="d-flex position-relative">
+                                                <button type="button" class="btn btn-outline-success px-8 py-2 ms-auto fw-bold" data-bs-toggle="collapse" data-bs-target="#reply" aria-expanded="false" aria-controls="collapseExample">Cancel</button>
+                                                <button type="button" class="btn btn-success px-8 py-2 ms-2 fw-bold">Reply</button>
+                                            </div>
+                                        </div>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="../main.js"></script>
+</body>
+</html>

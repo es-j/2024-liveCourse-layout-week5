@@ -1,0 +1,29 @@
+.nav{
+    li{
+        list-style: none;
+    }
+    li:hover{
+        background-color: var(--bs-gray-400);
+    }
+    .active{
+        border-left: 4px solid var(--bs-success);
+    }
+}
+.logo{
+    a{
+        display: block;
+        background-image: url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week5/logo-ANSWER.svg);
+        text-indent: 101%;
+        overflow: hidden;
+        white-space: nowrap;
+        height: 40px;
+        width: 151px;
+    }
+}
+.user{
+    img{
+        width: 40px;
+        height: 40px;
+        object-fit: cover;
+    }
+}

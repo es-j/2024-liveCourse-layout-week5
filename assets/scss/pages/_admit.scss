@@ -1,0 +1,46 @@
+.admit-table{
+    tbody td, tbody th{
+        height: 55px;
+        vertical-align: middle;
+    }
+}
+.add-form, .edit-form{
+    ul{
+        list-style: none;
+    }
+}
+.verification{
+    button{
+        width: 100%;
+    }
+    button:hover{
+        background-color: var(--bs-primary);
+    }
+}
+.add-admit input:checked, .edit-admit input:checked{
+    background-color: var(--bs-success);
+}
+.view-admit{
+    img{
+        object-fit: cover;
+        width: 141px;
+        height: 141px;
+    }
+}
+.view-detail{
+    width: 100%;
+}
+.deactivate{
+    button{
+        width: 100%;
+    }
+    button:hover{
+        background-color: var(--bs-primary);
+    }
+}
+.page-btn{
+    height: 32px;
+    button{
+        line-height: 19px;
+    }
+}
